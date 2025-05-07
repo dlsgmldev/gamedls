@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>H5P Standalone</title>
+  <style>
+    #h5p-container {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="h5p-container"></div>
+
+  <!-- Load the H5PStandalone bundle -->
+  <script src="node_modules/h5p-standalone/dist/main.bundle.js"></script>
+
+  <script>
+    window.addEventListener('load', () => {
+      const el = document.getElementById('h5p-container');
+      new H5PStandalone.H5P(el, {
+        h5pJsonPath: './h5p',
+        frame: true
+      });
+    });
+  </script>
+</body>
+</html>
