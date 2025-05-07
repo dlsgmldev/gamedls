@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Question from "./pages/QuestionLadder/question";
 import Leadership from "./pages/GameDLS/leadership";
 import ServiceExcellence from "./pages/GameDLS/service-excellence";
+import Sales from "./pages/GameDLS/sales";
 import Login from "./pages/Login";
 import RequireAuth from "./components/RequireAuth";
 import Layout from "./components/Layout";
@@ -17,6 +18,7 @@ const App = () => (
     <Route path="/question" element={<Question />} />
     <Route path="/leadership" element={<Leadership />} />
     <Route path="/service-excellence" element={<ServiceExcellence />} />
+    <Route path="/sales" element={<Sales />} />
       <Route path="/login" element={<Login />} />
       <Route
         element={
